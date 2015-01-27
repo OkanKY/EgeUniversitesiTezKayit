@@ -1,0 +1,230 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+
+
+form,input {margin: 0; padding: 0; display: inline;
+    height: 62px;
+    width: 175px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.outer-container {
+	background: url('img/container.jpg') no-repeat center bottom;
+	padding-bottom: 64px;
+}
+
+.inner-container {
+	border: 2px solid #D7D7D2;
+	background: #FFF;
+	font-size: 1.2em;
+	margin: 0 auto;
+	padding: 10px;
+	width: 780px;
+}
+
+.header {
+	background: #222 url('img/header.jpg') no-repeat;
+	height: 160px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+.header .title {
+	color: #FFF;
+	padding-top: 50px;
+}
+.header .title .sitename a {
+	border-bottom: 1px dashed #657382;
+	color: #FFF;
+	font: normal 3em sans-serif;
+	padding-bottom: 2px;
+	text-decoration: none;
+}
+
+a {color: #048;}
+.header .title .slogan {
+	font: normal 1.1em Verdana,sans-serif;
+	padding-top: 6px;
+}
+
+.path {
+	background: #949490;
+	color: #FFF;
+	font: normal 1.1em Verdana,sans-serif;
+	padding: 8px 12px;
+}
+.path a {
+	color: #FAFAFA;
+	text-decoration: none;
+}
+.main {
+	background: url(img/main.gif) repeat-y;
+	border-top: 4px solid #FFF;
+	padding: 8px 12px 0 0;
+}
+
+.content {
+	float: right;
+	width: 538px;
+}
+
+h1,h2,h3 {padding-top: 6px; color: #553; margin-bottom: 4px;}
+
+h1 {font: normal 1.8em Tahoma,sans-serif;}
+.content .descr {
+	color: #664;
+	font-size: 0.9em;
+	margin-bottom: 6px;
+}
+.content p {font-family: "Lucida Sans Unicode",sans-serif;}
+
+p,code,ul {padding-bottom: 1.2em;}
+
+blockquote {
+	background: url(img/quote.gif) no-repeat;
+	display: block;
+	font-weight: bold;
+	padding-left: 28px;
+}
+
+h2 {font: bold 1.4em sans-serif;}
+
+code {
+	background: #FFF;
+	border: 1px solid #EEE;
+	border-left: 6px solid #CCC;
+	color: #666;
+	display: block;
+	font: normal 1em Tahoma,sans-serif;
+	line-height: 1.6em;
+	margin-bottom: 12px;
+	padding: 8px 10px;
+	white-space: pre;
+}
+
+.navigation {
+	float: left;
+	width: 210px;
+}
+.navigation h2 {
+	color: #5A5A43;
+	font: bold 1.1em Tahoma,sans-serif;
+	line-height: 30px;
+	margin: 0;
+	padding-left: 12px;
+}
+.navigation ul {
+	padding: 0;
+	border-top: 1px solid #EAEADA;
+}
+.navigation li {border-bottom: 1px solid #EAEADA;}
+
+li {list-style: none;}
+
+.navigation li a {
+	font-size: 1.1em;
+	color: #554;
+	display: block;
+	padding: 8px 0 8px 5%;
+	text-decoration: none;
+	}
+.clearer {clear: both; font-size: 0;}
+.footer {
+	background: #949490;
+	color: #F7F7F2;
+	font: bold 1em sans-serif;
+	margin-top: 5px;
+	padding: 10px 12px;
+}
+.left {float: left;}
+.footer .right, .footer .right a {color: #C8C8C3;}
+.right {float: right;}
+
+.footer a {
+	color: #F7F7F2;
+	text-decoration: none;
+}
+    </style>
+</head>
+<body>
+
+    <form id="form1" runat="server" visible="True">
+
+<div class="outer-container">
+
+<div class="inner-container">
+
+	<div class="header">
+		
+		<div class="title">
+
+			<span class="sitename"><a href="index.html">&nbsp;</a></span><div class="slogan"></div>
+
+		</div>
+		
+	</div>
+
+	<div class="path">
+			
+			&gt;
+			
+			<a href="index.aspx"><span class="style2">ANASAYFA</span></a>
+				<a href="firmamiz.aspx"><span class="style2">FİRMAMIZ</span></a>
+            &#8250;</div>
+
+	<div class="main">		
+		
+		<div class="content">
+
+		  <h1>&nbsp;</h1>
+			<div class="descr"></div>
+
+			<p class="style11">&nbsp;</p>
+            <p class="style11">&nbsp;</p>
+            <p class="style11">&nbsp;</p>
+
+			<blockquote>
+		  <p>&nbsp;</p>
+            </blockquote>
+
+			<h1>
+
+			    &nbsp;</h1>
+			<div class="descr">
+			</div>
+
+	  </div>
+
+		Sitemize Hoşgeldiniz...<br />
+        <br />
+
+		<div class="clearer">&nbsp;</div>
+
+	</div>
+
+	<div class="style8">
+
+		&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&amp;&nbsp;&nbsp;&nbsp;  
+
+	</div>
+
+</div>
+
+</div>
+
+    </form>
+
+</body>
+</html>
